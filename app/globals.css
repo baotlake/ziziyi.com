@@ -7,12 +7,12 @@
   --bg-rgb: 255, 255, 255;
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --fg-rgb: 255, 255, 255;
     --bg-rgb: 255, 255, 255;
   }
-}
+} */
 
 body {
   color: rgb(var(--fg-rgb));

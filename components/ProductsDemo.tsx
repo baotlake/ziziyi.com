@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useRef } from "react";
 import classNames from "classnames/bind";
+import Link from "next/link";
 import PtSvg from "@/public/svg/pt.svg";
 import DeepReadingSvg from "@/public/svg/deep_reading.svg";
 import PhoneMockupSvg from "@/public/svg/phone_mockup.svg";
@@ -60,9 +61,12 @@ export default function ProductsDemo() {
               src={products[i].url}
             />
             {!products[i].url && (
-              <div className=" absolute top-[50%] left-0 w-full text-center text-3xl opacity-60">
-                暂时不可用
-              </div>
+              <Link
+                className="absolute top-[50%] left-0 w-full text-center text-3xl text-blue-500"
+                href="https://qing.ziziyi.com"
+              >
+                新页面打开
+              </Link>
             )}
           </div>
           <PhoneMockupSvg className="w-full relative z-10 pointer-events-none" />
